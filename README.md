@@ -75,11 +75,18 @@ footer.component.ts
 footer.component.html
 footer.component.css
 
+Steps to create repository in GitHub:-
+Go to GitHub repository.
+create a repository for portfolio website.
+https://github.com/ksaisujeeth/portfolio.git
+git remote add origin https://github.com/ksaisujeeth/portfolio.git
+
 Git:-
 git status
 git add .
 git commit -m "Message"
 git branch
+git remote add origin https://github.com/ksaisujeeth/portfolio.git
 git push origin main (If you are in main)
 git push origin master (If you are in master)
 
