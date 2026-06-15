@@ -1,59 +1,87 @@
-# Portfolio
+```text
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+Commands:-
+cd D:\saisujeeth\angularProject
+ng new portfolio
+Do you want to create a 'zoneless' application without zone.js (Developer Preview)? (y/N)
+Answer:- N
+Which stylesheet format would you like to use?
+Answer:- CSS
+Would you like to enable Server-Side Rendering (SSR) and Static Site Generation (SSG)?
+Answer:- No
 
-## Development server
+Flies Created:
+portfolio/angular.json (2497 bytes)
+portfolio/package.json (1131 bytes)
+portfolio/README.md (1531 bytes) 
+portfolio/tsconfig.json (1026 bytes)
+portfolio/.editorconfig (331 bytes)
+portfolio/.gitignore (629 bytes)
+portfolio/tsconfig.app.json (444 bytes)
+portfolio/tsconfig.spec.json (422 bytes)
+portfolio/.vscode/extensions.json (134 bytes)
+portfolio/.vscode/launch.json (490 bytes)
+portfolio/.vscode/tasks.json (980 bytes)
+portfolio/src/main.ts (228 bytes)
+portfolio/src/index.html (308 bytes)
+portfolio/src/styles.css (81 bytes)
+portfolio/src/app/app.spec.ts (690 bytes)
+portfolio/src/app/app.ts (278 bytes)
+portfolio/src/app/app.css (0 bytes)
+portfolio/src/app/app.html (20436 bytes)
+portfolio/src/app/app.config.ts (412 bytes)
+portfolio/src/app/app.routes.ts (80 bytes)
+portfolio/public/favicon.ico (15086 bytes)
 
-To start a local development server, run:
+cd portfolio
 
-```bash
-ng serve
+Files Created by me:-
+src/app/app.component.ts
+src/app/app.component.html
+src/app/app.component.css
+
+Created components folder - navbar folder -
+navbar.component.ts
+navbar.component.html
+navbar.component.css
+
+components - hero
+hero.component.html
+hero.component.css
+hero.component.ts
+
+components - about
+about.component.html
+about.component.css
+about.component.ts
+
+components - skills
+skills.component.ts
+skills.component.html
+skills.component.css
+
+components - experience
+experience.component.ts
+experience.component.html
+experience.component.css
+
+components - education
+education.component.ts
+education.component.html
+education.component.css
+
+components - footer
+footer.component.ts
+footer.component.html
+footer.component.css
+
+Git:-
+git status
+git add .
+git commit -m "Message"
+git branch
+git push origin main (If you are in main)
+git push origin master (If you are in master)
+
+
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

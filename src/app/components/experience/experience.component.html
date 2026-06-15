@@ -1,0 +1,53 @@
+<section id="experience" class="section experience">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-subtitle">
+        My journey building enterprise solutions for leading organizations
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let exp of experiences; let i = index" [class.current]="exp.isCurrent">
+        <div class="timeline-marker">
+          <div class="marker-dot"></div>
+          <div class="marker-line"></div>
+        </div>
+
+        <div class="timeline-content glass-card">
+          <div class="experience-header">
+            <div class="company-info">
+              <div class="company-logo">{{ exp.companyShort }}</div>
+              <div class="company-details">
+                <h3>{{ exp.company }}</h3>
+                <span class="role">{{ exp.role }}</span>
+              </div>
+            </div>
+            <div class="experience-meta">
+              <span class="duration">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                {{ exp.duration }}
+              </span>
+              <span class="client-badge">{{ exp.client }}</span>
+            </div>
+          </div>
+
+          <div class="responsibilities">
+            <ul>
+              <li *ngFor="let resp of exp.responsibilities">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 11 12 14 22 4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+                {{ resp }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

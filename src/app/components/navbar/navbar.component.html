@@ -1,0 +1,37 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="navbar-container">
+    <a href="#home" class="logo" (click)="scrollTo('#home'); $event.preventDefault()">
+      <span class="logo-text">SS</span>
+      <span class="logo-full">Sai Sujeeth</span>
+    </a>
+
+    <ul class="nav-links" [class.active]="isMobileMenuOpen">
+      <li *ngFor="let item of navItems">
+        <a 
+          [href]="item.href" 
+          [class.active]="activeSection === item.href.substring(1)"
+          (click)="scrollTo(item.href); $event.preventDefault()"
+        >
+          {{ item.label }}
+        </a>
+      </li>
+    </ul>
+
+    <button 
+      class="mobile-toggle" 
+      [class.active]="isMobileMenuOpen"
+      (click)="toggleMobileMenu()"
+      aria-label="Toggle menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<div 
+  class="mobile-overlay" 
+  [class.active]="isMobileMenuOpen"
+  (click)="closeMobileMenu()"
+></div>

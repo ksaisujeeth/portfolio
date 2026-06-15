@@ -1,0 +1,91 @@
+<section id="about" class="section about">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">
+        Passionate about building efficient and scalable enterprise solutions
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-content">
+        <div class="about-intro glass-card">
+          <div class="intro-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <p>
+            A <strong>Java Developer</strong> with 2+ years' experience in crafting efficient, 
+            scalable solutions and expertise in Java, Spring, Spring Boot, and Agile methodologies 
+            to contribute to innovative projects in a challenging environment.
+          </p>
+          <p>
+            I aim to drive organizational success by delivering high-quality solutions, enhancing 
+            process efficiency, and continuously expanding my technical skill set.
+          </p>
+        </div>
+
+        <div class="current-role glass-card">
+          <div class="role-header">
+            <div class="company-badge">
+              <span class="company-icon">A</span>
+              <div>
+                <h3>Accenture</h3>
+                <span class="role-subtitle">Current Role</span>
+              </div>
+            </div>
+            <span class="role-client">Client: FedEx</span>
+          </div>
+          
+          <div class="role-content">
+            <p>
+              This project enables search feature teams to onboard their dependencies to the 
+              <strong>IFX (Isolated Feature Development/Testing/Rendering)</strong> stack.
+            </p>
+            <p>
+              Search features are developed in a loosely coupled architecture, allowing multiple 
+              teams to work independently while sharing common configurations and code.
+            </p>
+            <p>
+              Working as a <strong>Spring Boot Developer</strong> using Spring Boot and Spring 
+              Framework including Application Context, MVC, Data, Boot, and Security.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-highlights">
+        <div class="highlight-card glass-card" *ngFor="let item of highlights">
+          <div class="highlight-icon">
+            <ng-container [ngSwitch]="item.icon">
+              <svg *ngSwitchCase="'code'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+              <svg *ngSwitchCase="'layers'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+              <svg *ngSwitchCase="'zap'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+              <svg *ngSwitchCase="'users'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </ng-container>
+          </div>
+          <div class="highlight-info">
+            <span class="highlight-label">{{ item.label }}</span>
+            <span class="highlight-value">{{ item.value }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

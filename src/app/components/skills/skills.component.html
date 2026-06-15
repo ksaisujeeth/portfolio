@@ -1,0 +1,56 @@
+<section id="skills" class="section skills">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">
+        Technologies and tools I work with to build scalable applications
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category glass-card" *ngFor="let category of skillCategories; let i = index" [style.animation-delay.ms]="i * 100">
+        <div class="category-header">
+          <div class="category-icon">
+            <ng-container [ngSwitch]="category.icon">
+              <svg *ngSwitchCase="'code'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+              <svg *ngSwitchCase="'globe'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <svg *ngSwitchCase="'layers'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+              <svg *ngSwitchCase="'repeat'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="17 1 21 5 17 9"/>
+                <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                <polyline points="7 23 3 19 7 15"/>
+                <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+              </svg>
+              <svg *ngSwitchCase="'git'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="18" r="3"/>
+                <circle cx="6" cy="6" r="3"/>
+                <path d="M6 21V9a9 9 0 0 0 9 9"/>
+              </svg>
+              <svg *ngSwitchCase="'tool'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </ng-container>
+          </div>
+          <h3>{{ category.title }}</h3>
+        </div>
+        
+        <div class="skill-tags">
+          <span class="skill-tag" *ngFor="let skill of category.skills">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
